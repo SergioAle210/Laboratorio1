@@ -26,14 +26,13 @@ class ItemData(val originalValue: Any?) {
                 null
             }
         } else if (originalValue is Boolean) {
-            if (originalValue as Boolean == true) {
+            if (originalValue) {
                 return "Verdadero"
-            } else if (!(originalValue as Boolean)) {
+            } else {
                 return "Falso"
             }
         } else {
             return null
         }
-        return ""
     }
 }

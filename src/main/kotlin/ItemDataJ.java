@@ -33,13 +33,11 @@ public class ItemDataJ {
         } else if (originalValue instanceof Boolean) {
             if ((boolean) originalValue){
                 return "Verdadero";
-            } else if (!((boolean) originalValue)) {
+            } else {
                 return "Falso";
             }
         } else {
             return null;
         }
-
-        return "";
     }
 }
